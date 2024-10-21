@@ -2,8 +2,8 @@ import React , {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const AdminLogin = () =>{
-    const [name , setName] = useState("");
-    const [password , setPassword] = useState("");
+    const [name , setName] = useState("Admin");
+    const [password , setPassword] = useState("password@123");
     const [loginValid , setLoginValid] = useState(true);
     const navigate = useNavigate();
 
