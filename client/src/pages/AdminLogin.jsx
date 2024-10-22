@@ -2,14 +2,18 @@ import React , {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const AdminLogin = () =>{
-    const [name , setName] = useState("Admin");
-    const [password , setPassword] = useState("password@123");
+
+  const adminUser = 'Admin';
+  const adminPass = 'password@123';
+
+  const [name, setName] = useState(adminUser);
+  const [password, setPassword] = useState(adminPass);
     const [loginValid , setLoginValid] = useState(true);
     const navigate = useNavigate();
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if(name === 'Admin' && password === 'password@123'){
+        if(name === adminUser && password === adminPass){
           navigate("/admin-panel")
         }else{
           setLoginValid(false);
@@ -17,7 +21,7 @@ const AdminLogin = () =>{
     }    
     return (
         <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 border border-gray-300 shadow-lg rounded-lg">
-      <h2 className="text-2xl font-bold mb-6">User Information Form</h2>
+      <h2 className="text-2xl font-bold mb-6">Admin Login</h2>
 
       {/* Name Input */}
       <div className="mb-4">

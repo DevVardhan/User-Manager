@@ -30,7 +30,7 @@ const RegisterUser = () => {
     formData.append('photo' , image);
 
     try{
-        const respose = await fetch('http://localhost:5000/api/users' , {
+        const respose = await fetch(`${import.meta.env.VITE_REACT_APP_BASE_URL}/api/users` , {
             method : 'POST' ,
             body :formData ,
         });

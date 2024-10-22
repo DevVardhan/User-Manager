@@ -7,7 +7,7 @@ function AdminPanel() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/allUsers' , {
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BASE_URL}/api/allUsers` , {
             method : 'GET', 
         });
         if (!response.ok) {
