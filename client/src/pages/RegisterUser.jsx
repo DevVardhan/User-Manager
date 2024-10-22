@@ -33,6 +33,7 @@ const RegisterUser = () => {
         const respose = await fetch(`${import.meta.env.VITE_REACT_APP_BASE_URL}/api/users` , {
             method : 'POST' ,
             body :formData ,
+            mode: 'no-cors', // Set to no-cors  
         });
 
         if(respose.ok){
