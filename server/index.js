@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
     {
-        origin :"https://user-manager-swart.vercel.app/",
+        origin: "https://user-manager-8ktx-eky8uw9ej-devs-projects-5fe9de1a.vercel.app",
         methods: ["POST" , "GET"],
         credentials: true ,
     }
