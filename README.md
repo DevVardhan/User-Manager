@@ -92,3 +92,7 @@ PORT=3001
 3. If MongoDB connection fails:
 - Ensure MongoDB service is running
 - Check if your connection string in server's .env is correct
+
+```env
+MONGO_URL=locakhosthttp://localhost:3124
+```
