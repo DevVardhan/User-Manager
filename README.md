@@ -94,5 +94,5 @@ PORT=3001
 - Check if your connection string in server's .env is correct
 
 ```env
-MONGO_URL=locakhosthttp://localhost:3124
+MONGO_URL=http://localhost:3124
 ```
