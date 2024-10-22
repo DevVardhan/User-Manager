@@ -8,7 +8,13 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin :"https://user-manager-swart.vercel.app",
+        methods: ["POST" , "GET"],
+        credentials: true ,
+    }
+));
 
 
 app.use('/api/users' ,UserRoutes );
